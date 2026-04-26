@@ -1,6 +1,6 @@
 {
   "name": "desktop-for-yoto",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Drag-and-drop audio onto Yoto MYO cards.",
   "main": "dist/main.js",
   "private": true,
@@ -33,7 +33,10 @@
       "**/node_modules/@huggingface/**"
     ],
     "extraResources": [
-      { "from": "models", "to": "models" }
+      {
+        "from": "models",
+        "to": "models"
+      }
     ],
     "files": [
       "dist/**",
@@ -41,11 +44,28 @@
       "node_modules/**"
     ],
     "mac": {
-      "target": [{ "target": "dmg", "arch": ["x64", "arm64"] }, { "target": "zip", "arch": ["x64", "arm64"] }],
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "x64",
+            "arm64"
+          ]
+        }
+      ],
       "identity": null
     },
     "win": {
-      "target": ["nsis"]
+      "target": [
+        "nsis"
+      ]
     },
     "publish": {
       "provider": "github",
