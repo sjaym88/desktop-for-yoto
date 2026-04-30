@@ -1,6 +1,6 @@
 {
   "name": "desktop-for-yoto",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Drag-and-drop audio onto Yoto MYO cards.",
   "main": "dist/main.js",
   "private": true,
